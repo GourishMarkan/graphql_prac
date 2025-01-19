@@ -16,6 +16,7 @@ const ADD_CLIENT = gql`
       id
       name
       email
+      phone
     }
   }
 `;
