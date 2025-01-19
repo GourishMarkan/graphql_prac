@@ -101,7 +101,7 @@ const mutation = new GraphQLObjectType({
       args: {
         id: { type: GraphQLNonNull(GraphQLID) },
       },
-      resolve(args) {
+      resolve(parent, args) {
         return Client.findByIdAndDelete(args.id);
       },
     },
