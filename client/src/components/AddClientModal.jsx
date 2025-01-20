@@ -3,7 +3,6 @@ import React from "react";
 import { FaUser } from "react-icons/fa";
 import { ADD_CLIENT } from "../mutations/clientMutation";
 import { GET_CLIENTS } from "../queries/clientQuery";
-import { query } from "express";
 
 const AddClientModal = () => {
   const [name, setName] = React.useState("");

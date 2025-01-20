@@ -112,7 +112,7 @@ const AddProjectModal = () => {
                       onChange={(e) => setClientId(e.target.value)}
                     >
                       <option value="">Select Client</option>
-                      {data.clients.map((client) => (
+                      {data.clients?.map((client) => (
                         <option key={client.id} value={client.id}>
                           {client.name}
                         </option>
